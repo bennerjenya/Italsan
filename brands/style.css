@@ -1,0 +1,279 @@
+.title-block {
+    padding: 16px 0;
+}
+.title-block .title {
+    font-family: "Playfair", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.title-block p,
+.title-block span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--gray);
+}
+.swiper-button-disabled path {
+    stroke: #9d9d9d;
+}
+.direction {
+    padding: 24px 0 16px;
+}
+.nav {
+    margin-bottom: 0;
+}
+.brands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.brands .list {
+    max-width: 640px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+    row-gap: 15px;
+}
+.brands .list button.button {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+.brands .list button.button.active {
+    font-weight: 800;
+}
+.brands .list button.button.disabled {
+    color: #9D9D9D;
+    cursor: default;
+}
+.top-brands {
+    padding: 24px 0 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.top-brands .brand {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 24px 0;
+}
+.top-brands .brand h3 {
+    font-family: "Playfair", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 24px;
+}
+.top-brands .brand.active {
+    display: block;
+}
+.top-brands .brand .lists {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 64px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+}
+.top-brands .brand .list {
+    display: -ms-grid;
+    display: grid;
+    gap: 32px;
+}
+.top-brands .brand .list li {
+    text-align: left;
+}
+.top-brands .brand .list li span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+}
+.show-all {
+    padding: 16px 26px;
+    margin: 24px 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+.show-all.hide {
+    display: none;
+}
+.brand .images-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 16px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 16px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+    row-gap: 24px;
+}
+.brand .images-list .image {
+    border: 1px solid #EBEBEB;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 33px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.brand .images-list .image:hover {
+    border: 1px solid var(--green);
+}
+.brand .images-list .image img {
+    width: 145px;
+    height: 65px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.from-collection {
+    padding: 0 0 42px;
+}
+.from-collection .swiper-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 9px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+}
+.from-collection__top .title {
+    font-family: "Playfair", sans-serif;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.from-collection__top {
+    /*display: flex;*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.from-collection__top-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 24px;
+}
+.from-collection__top-buttons {
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+}
+.from-collections-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--orange);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.from-collection .swiper-slide {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+.from-collection .slider-visible {
+    opacity: 1;
+    visibility: visible;
+}
+@media (min-width: 744px) {
+    .direction {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .from-collection .swiper-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 0;
+    }
+    .from-collection__top-buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .from-collections-link {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .from-collection__top .title {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .brand .images-list {
+        -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .top-brands .brand .lists {
+        -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1152px) {
+    .direction {
+        padding: 16px 0 0;
+    }
+    .brand .images-list {
+        -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .top-brands .brand .lists {
+        -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1364px) {
+    .direction {
+        padding: 16px 0;
+    }
+}

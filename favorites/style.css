@@ -1,0 +1,126 @@
+.container {
+    overflow: visible;
+}
+.title-block {
+    padding: 16px 0;
+}
+.title-block .title {
+    font-family: "Playfair", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.title-block p,
+.title-block span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--gray);
+}
+.nav {
+    margin-bottom: 0!important;
+}
+.tabs {
+    margin: 0 0 24px;
+}
+.tabs .list {
+    max-width: 1280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 24px;
+    overflow: auto;
+}
+.tabs .list .tab {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #F1F1F1;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tabs .list .tab p {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+.tabs .list .tab span {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #9D9D9D;
+}
+.tabs .list .tab.active {
+    background: var(--dark);
+}
+.tabs .list .tab.active p {
+    color: #FAFAFA;
+}
+.cards-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 9px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+}
+.pagination-block {
+    padding: 16px 0 46px;
+}
+
+@media (min-width: 744px) {
+    .tabs .list {
+        padding: 0 28px;
+    }
+    .cards-list {
+        gap: 24px;
+    }
+    .title-block .title {
+        font-size: 32px;
+        line-height: 43px;
+        margin-bottom: 12px;
+    }
+}
+@media (min-width: 1152px) {
+    .tabs .list {
+        padding: 0 42px;
+    }
+    .cards-list {
+        gap: 0;
+        -ms-grid-columns: 1fr 0 1fr 0 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pagination-block {
+        padding: 16px 0 86px;
+    }
+}
+@media (min-width: 1364px) {
+    .tabs .list {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .cards-list {
+        -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .pagination-block {
+        padding: 32px 0 86px;
+    }
+}
